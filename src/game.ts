@@ -45,8 +45,8 @@ for(let i = 0; i < cells.length; i++){
     let btnClicked = cells[i].querySelector('.btnClicked')
 
     cells[i].addEventListener("click", ()=>{
-                 if(btnClicked?.textContent == ""){                 
-                    btnClicked.textContent = player
+                 if(btnClicked!.textContent == ""){                 
+                    btnClicked!.textContent = player
                     player = changePlayer()
                   
                     getWinner()
