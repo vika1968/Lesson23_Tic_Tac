@@ -1,0 +1,67 @@
+
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 50px;
+
+    section {
+        text-align: center;
+        .game-title{
+            font-family: "Permanent Marker", cursive;
+            color: #7e107e;
+            font-size: 50px;               
+        }
+
+        .game-container {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            width: 306px;
+            margin: 50px auto;
+        
+            .line{
+                background-color: black;
+                height: 3px;
+                width: 10;
+                position: absolute;
+                background-color: #911d91;
+                transition: width 1s ease-in-out;
+            }
+        
+            .cell {
+                font-family: "Permanent Marker", cursive;
+                width: 100px;
+                height: 100px;
+                box-shadow: 0 0 0 4px #e5cfee;
+                border: 1px solid #333333;
+                cursor: pointer;   
+                font-size: 60px;
+                &:hover{
+                    background-color: #f3e7f9
+                }       
+            }    
+        }     
+    }
+
+    .gameInfo{
+        font-family: "Permanent Marker", cursive;
+        color: rgb(52, 18, 85);
+        font-style: italic;
+        font-size: 20px;      
+    }
+
+    #reset {
+        margin: 0 23px;
+        padding: 1px 18px;
+        background: #f3e7f9;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: 'Baloo Bhaina 2';
+        font-size: 15px;
+        font-weight: bolder;
+    }    
+}
+
+
+
+
